@@ -1,0 +1,29 @@
+# weights / checkpoints
+*.h5
+*.ckpt
+*.pth
+*.pt
+*.pb
+*.npz
+*.npy
+
+# large data
+data/
+outputs/
+*.csv.gz
+
+# env
+.env
+*.env
+
+# python
+__pycache__/
+*.pyc
+
+# os
+.DS_Store
+# local / misc
+.gitmore
+
+# data & weights
+data/
