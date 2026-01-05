@@ -19,7 +19,7 @@ This repository provides a **clean and reproducible benchmarking pipeline** for 
   - **STaCker with affine-only spatial registration**
 
 Although STaCker supports both **affine** and **dense (nonlinear)** registration,  
-this benchmark **intentionally restricts alignment to affine transformations only**.
+this benchmark intentionally restricts alignment to affine transformations only.
 The dense alignment stage is intentionally disabled and not evaluated in this repository.
 
 STaCker’s dense alignment stage relies on patch-wise image deformation using a deep neural network.
@@ -29,7 +29,11 @@ density raster images for alignment.
 Under this setting, the resulting density images are spatially sparse and highly smoothed,
 which leads to empty or invalid patch selections during dense registration.
 As a result, the dense model produces empty batches and cannot generate meaningful deformation fields.
+## Pretrained weights
 
+This repository does **not** include pretrained STaCker weights due to size limits.
+
+Please download the official weights from: https://github.com/regeneron-mpds/stacker
 
 
 
